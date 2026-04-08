@@ -1,0 +1,26 @@
+meta {
+  name: cmms_ref_container_prefix
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:3000/v2/prefix/add
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "prefix": "AAAU",
+    "owner_name": "ASIA CONTAINER LEASING CO LTD",
+    "owner_abbreviation": "ACLC",
+    "user_name": "acmms_admin",
+    "address": "Lacson St., Obrero, Davac City"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

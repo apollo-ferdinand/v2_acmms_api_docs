@@ -1,0 +1,26 @@
+meta {
+  name: acmms_ref_shipping_line
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3000/v2/shippingline/add
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "sl_code":"TES4",
+    "sl_name":"Test Shipping Line 4",
+    "sl_prefix":"TEST",
+    "user_name":"acmms_admin",
+    "remarks": "This is a test shipping line"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

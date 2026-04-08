@@ -1,0 +1,20 @@
+meta {
+  name: getMonthlyDischargeLoadout
+  type: http
+  seq: 13
+}
+
+get {
+  url: http://localhost:3000/v2/cmms/container/containerMovement?year=2025
+  body: none
+  auth: inherit
+}
+
+params:query {
+  year: 2025
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
