@@ -1,0 +1,16 @@
+meta {
+  name: getExportLoadOutSummary
+  type: http
+  seq: 16
+}
+
+get {
+  url: http://localhost:3000/v2/cmms/container/exportLoadOutSummary
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
