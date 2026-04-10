@@ -1,0 +1,24 @@
+meta {
+  name: getContainerListByStatusAndPort [0006]
+  type: http
+  seq: 23
+}
+
+get {
+  url: http://localhost:3000/v2/cmms/container/traffic?status=DISCHARGE&page=1&pageSize=1&order=DESC
+  body: none
+  auth: inherit
+}
+
+params:query {
+  status: DISCHARGE
+  page: 1
+  pageSize: 1
+  order: DESC
+  ~port: MNN01
+}
+
+settings {
+  encodeUrl: false
+  timeout: 0
+}
