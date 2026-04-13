@@ -5,13 +5,13 @@ meta {
 }
 
 get {
-  url: http://localhost:3000/v2/cmms/container/traffic?status=DISCHARGE&page=1&pageSize=1&order=DESC&port=MNN01
+  url: http://localhost:3000/v2/cmms/container/traffic?status=LOADOUT&page=1&pageSize=1&order=DESC&port=MNN01
   body: none
   auth: inherit
 }
 
 params:query {
-  status: DISCHARGE
+  status: LOADOUT
   page: 1
   pageSize: 1
   order: DESC
