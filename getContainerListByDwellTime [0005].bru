@@ -5,18 +5,18 @@ meta {
 }
 
 get {
-  url: http://localhost:3000/v2/cmms/container/time?minDays=0&maxDays=31&page=1&pageSize=1&port=P02B&order=ASC
+  url: http://localhost:3000/v2/cmms/container/time?minDays=1&maxDays=30&page=1&pageSize=1&order=ASC
   body: none
   auth: inherit
 }
 
 params:query {
-  minDays: 0
-  maxDays: 31
+  minDays: 1
+  maxDays: 30
   page: 1
   pageSize: 1
-  port: P02B
   order: ASC
+  ~port: P02B
 }
 
 settings {
