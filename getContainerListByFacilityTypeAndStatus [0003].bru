@@ -5,7 +5,7 @@ meta {
 }
 
 get {
-  url: http://localhost:3000/v2/cmms/container/gate?status=GATEOUT&page=1&pageSize=10&facilityType=Terminal&port=P02B&order=ASC
+  url: http://localhost:3000/v2/cmms/container/gate?status=GATEOUT&page=1&pageSize=1&facilityType=Terminal&port=P02B&order=DESC
   body: none
   auth: inherit
 }
@@ -13,10 +13,10 @@ get {
 params:query {
   status: GATEOUT
   page: 1
-  pageSize: 10
+  pageSize: 1
   facilityType: Terminal
   port: P02B
-  order: ASC
+  order: DESC
 }
 
 settings {
