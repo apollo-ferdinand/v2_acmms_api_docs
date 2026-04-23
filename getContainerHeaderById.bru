@@ -1,0 +1,20 @@
+meta {
+  name: getContainerHeaderById
+  type: http
+  seq: 26
+}
+
+get {
+  url: http://localhost:3000/v2/cmms/container/header/{{id}}
+  body: none
+  auth: inherit
+}
+
+vars:pre-request {
+  id: 35869
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
