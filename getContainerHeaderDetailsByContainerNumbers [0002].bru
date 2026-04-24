@@ -1,0 +1,32 @@
+meta {
+  name: getContainerHeaderDetailsByContainerNumbers [0002]
+  type: http
+  seq: 28
+}
+
+post {
+  url: http://localhost:3000/v2/cmms/container/header/details
+  body: json
+  auth: inherit
+}
+
+body:json {
+  // optional method to allow multiple containers
+  // {
+  //   "containerNo": [
+  //     "REGU3273429",
+  //     "TEMU7528891",
+  //     "CAIU9021536",
+  //     "TGBU8077684"
+  //   ]
+  // }
+  
+  {"containerNo":"CAIU9021536"}
+  
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

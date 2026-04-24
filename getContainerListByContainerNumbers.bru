@@ -1,0 +1,23 @@
+meta {
+  name: getContainerListByContainerNumbers
+  type: http
+  seq: 29
+}
+
+post {
+  url: http://localhost:3000/v2/cmms/container/containerListByContainerNumber
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "containerNos": ["CAIU9021536", "TEMU7528891"]
+  // optional field   "statusId": 2
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
